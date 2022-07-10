@@ -1,0 +1,111 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    background-color: rgba(212, 175, 144, 0.651);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.calculatorOutline{
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: silver;
+    padding: 10px;
+    box-shadow: 0 0 22px rgb(112, 112, 112), 0 0 4px #7b839d inset;
+    border-radius: 28px;
+    border-bottom: 12px solid #7b839d;
+    /*border-right: 1.5px solid #7b839d;
+    border-left: 1.5px solid #7b839d;*/
+
+}
+
+.screen{
+    margin: 28px 8px 16px 8px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    background-color: #a8c64ea6;
+    border-radius: 16px;
+    border: 0.5px solid #3c412c;
+    border-top: 3px solid #3c412c;
+    box-shadow: 0 3px 12px #424e1ebd inset, 0 0px 24px rgb(112, 112, 112);
+}
+.screen .previousLine{
+    height: 32px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+}
+.screen .nextLine{
+    height: 48px;
+    padding: 16px;
+    /*border-top: 1px solid #3c412c;*/
+    text-align: right;
+    text-decoration: none;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.buttons{
+    display: grid;
+    justify-content: space-evenly;
+    gap: 8px;
+    grid-template-columns: auto auto auto auto auto;
+    margin: 32px;
+    border-radius: 32px;
+}
+
+.buttons button{
+    height: 48px;
+    width: 52px;
+    background-color: white;
+    border-radius: 8px  8px  20px 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 6px solid rgb(216, 216, 216);
+    /*cursor: pointer;*/
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    outline: none;
+    box-shadow: 0 0px 8px rgb(112, 112, 112);
+}
+
+.buttons .fn{
+    background-color: rgba(255, 187, 62, 0.849);
+    border-bottom: 6px solid rgba(231, 169, 54, 0.733);
+}
+
+.buttons button:hover{
+    background-color: hsla(0, 0%, 100%, 0.65);
+}
+
+.buttons .fn:hover{
+    background-color: rgb(255, 187, 60);
+    border-bottom: 6px solid rgba(231, 169, 54, 0.733);
+}
+
+.buttons button:active{
+    background-color: hsla(0, 0%, 100%, 0.65);
+    border-bottom: 3px solid rgb(216, 216, 216);
+    transform: translateY(4px);
+}
+
+.buttons .fn:active{
+    background-color: rgb(255, 187, 60);
+    border-bottom: 3px solid rgba(231, 169, 54, 0.733);
+    transform: translateY(3px);
+}
